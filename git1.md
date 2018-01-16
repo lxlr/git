@@ -82,24 +82,24 @@
 > 我们可以通过Esc键回到命令模式.
 > 每一种编辑下面有对应的命令.
 > 1. *输入模式命令*
-	 * - 直接输入i或者a进入输入模式,可以进行内容的编辑
-	 * - 想要退出输入模式,则按下键盘的Esc键
+	* - 直接输入i或者a进入输入模式,可以进行内容的编辑
+	* - 想要退出输入模式,则按下键盘的Esc键
 > 2. *末行模式命令*
-	 * - 进行末位模式: shift + :
-	 * - w: 保存当前文件
-	 * - w filePath/fileName: 另存为
-	 * - wq: 保存并退出
-	 * - e!: 撤销更改,返回上一次保存状态
-	 * - q!: 不保存,强制退出.
-	 * - set nu: 设置行号
+	* - 进行末位模式: shift + :
+	* - w: 保存当前文件
+	* - w filePath/fileName: 另存为
+	* - wq: 保存并退出
+	* - e!: 撤销更改,返回上一次保存状态
+	* - q!: 不保存,强制退出.
+	* - set nu: 设置行号
 > 3. *命令模式*
-	 * - ZZ: (大写)保存并直接退出
-	 * - yy: 复制当前行
-	 * - u: 撤销操作,可以撤销多次
-	 * - dd: 删除当前行
-	 * - p: 粘贴内容
-	 * - ctrl + f: 向前翻页.
-	 * - ctrl + b: 向后翻页
+	* - ZZ: (大写)保存并直接退出
+	* - yy: 复制当前行
+	* - u: 撤销操作,可以撤销多次
+	* - dd: 删除当前行
+	* - p: 粘贴内容
+	* - ctrl + f: 向前翻页.
+	* - ctrl + b: 向后翻页
 	 
 ### 版本控制
 > 版本控制（Version Control Systems）是一种软体工程技巧，在开发的过程中，确保由不同人所编辑的同一档案都得到更新。版本控制通过文档控制(documentation control)记录程序各个模块的改动,并为每次改动编上序号.这种方法时工程图(engineering drawings) 维护 (maintenance)的标准做法.
@@ -251,24 +251,24 @@
 > ![2345截图20180109194649.png](http://upload-images.jianshu.io/upload_images/122816-9c5c99d86be48602.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Git共享仓库代码冲突示例
-> 代码冲突: 多个人同时修改了相同的代码,并且都提交到了本地,先提交到远程仓库的人不会有任何问题!后提交的人,需要先pull下来,在pull的时候,会产生冲突;
-> 这个时候就需要先去解决冲突,解决完毕后,提交到本地,再提交到远程仓库;
-> 第一步：user2修改了login.txt，并将它提交到了远程仓库
+> * 代码冲突: 多个人同时修改了相同的代码,并且都提交到了本地,先提交到远程仓库的人不会有任何问题!后提交的人,需要先pull下来,在pull的时候,会产生冲突;
+> 	* 这个时候就需要先去解决冲突,解决完毕后,提交到本地,再提交到远程仓库;
+> * 第一步：user2修改了login.txt，并将它提交到了远程仓库
 > ![2345截图20180109200525.png](http://upload-images.jianshu.io/upload_images/122816-9e05f33634a36e0e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109200407.png](http://upload-images.jianshu.io/upload_images/122816-0328419b2a53b489.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第二步：user1同样修改login.txt,将它提交到本地仓库
+> * 第二步：user1同样修改login.txt,将它提交到本地仓库
 > ![2345截图20180109200835.png](http://upload-images.jianshu.io/upload_images/122816-e82942ea26dd9da5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109202121.png](http://upload-images.jianshu.io/upload_images/122816-75c38e1409fa7c0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第三步： user1将代码提交到远程仓库，会发生冲突，,因为user1跟user2修改了同一个文件的同段代码,而且user1已经提交到远程仓库,远程仓库的版本比user1的版本要新，此时提示user1在push之前先执行git pull
+> * 第三步： user1将代码提交到远程仓库，会发生冲突，,因为user1跟user2修改了同一个文件的同段代码,而且user1已经提交到远程仓库,远程仓库的版本比user1的版本要新，此时提示user1在push之前先执行git pull
 > ![2345截图20180109202711.png](http://upload-images.jianshu.io/upload_images/122816-415e054259013ae5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第四步： user1执行git pull，在执行git pull时，提示login.txt文件产生冲突，要去解决冲突
+> * 第四步： user1执行git pull，在执行git pull时，提示login.txt文件产生冲突，要去解决冲突
 > ![2345截图20180109203536.png](http://upload-images.jianshu.io/upload_images/122816-32ab893f3c263be1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 打开user1文件夹里面的login.txt文件
+> 	* 打开user1文件夹里面的login.txt文件
 > ![2345截图20180109203853.png](http://upload-images.jianshu.io/upload_images/122816-e546d028d22f98b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 解决冲突，根据实际开发的需要删除对应的<<<===，保留最终的代码就可以
+> 	* 解决冲突，根据实际开发的需要删除对应的<<<===，保留最终的代码就可以
 > ![2345截图20180109204116.png](http://upload-images.jianshu.io/upload_images/122816-c0ed3e717a48dc8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第五步： user1再次提交代码到本地，提交到共享仓库
+> * 第五步： user1再次提交代码到本地，提交到共享仓库
 > ![2345截图20180109204435.png](http://upload-images.jianshu.io/upload_images/122816-fccceec5affc9d13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第六步： user2从共享仓库拉取代码，此时代码和user1一样
+> * 第六步： user2从共享仓库拉取代码，此时代码和user1一样
 > ![2345截图20180109204743.png](http://upload-images.jianshu.io/upload_images/122816-34f31a4ceb28ebe7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109204840.png](http://upload-images.jianshu.io/upload_images/122816-5103adf299fa6805.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
