@@ -41,11 +41,11 @@
 
 ### Bash命令
 > 常见命令格式: 命令[-options][参数]
->> ```cd (Change Directory)``` 切换目录，如 cd /etc
->> ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
->> ```pwd(Print Working Directory)``` 查看当前目录
->> ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
->> ```touch``` 创建文件，如 touch index.html
+> * ```cd (Change Directory)``` 切换目录，如 cd /etc
+> * ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
+> * ```pwd(Print Working Directory)``` 查看当前目录
+> ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
+> ```touch``` 创建文件，如 touch index.html
 > ```wc (Word Count) ``` 字数信息统计，如 wc index.html
 > ```wc -l filename ``` 报告行数
 > ```wc -c filename ``` 报告字节数
@@ -84,7 +84,7 @@
 > 1. *输入模式命令*
 	 - 直接输入i或者a进入输入模式,可以进行内容的编辑
 	 - 想要退出输入模式,则按下键盘的Esc键
-> 1. *末行模式命令*
+> 2. *末行模式命令*
 	 - 进行末位模式: shift + :
 	 - w: 保存当前文件
 	 - w filePath/fileName: 另存为
@@ -92,7 +92,7 @@
 	 - e!: 撤销更改,返回上一次保存状态
 	 - q!: 不保存,强制退出.
 	 - set nu: 设置行号
-> 1. *命令模式*
+> 3. *命令模式*
 	 - ZZ: (大写)保存并直接退出
 	 - yy: 复制当前行
 	 - u: 撤销操作,可以撤销多次
@@ -121,7 +121,7 @@
 > 1. 已提交(committed) 没有任何提示
 > 2. 已修改(modified) (没有纳入到版本控制) 红色
 > 3. 已暂存(staged) 绿色
->    由此引入Git项目的三个工作区域概念
+> 4. 由此引入Git项目的三个工作区域概念
 >    > Git仓库:
 >    > 是Git用来保存项目的元数据和对象数据库的地方.这是Git中最重要的部分,从其他计算机克隆仓库时,拷贝的就是这里的数据.
 >    > 工作目录:
