@@ -44,31 +44,31 @@
 > * ```cd (Change Directory)``` 切换目录，如 cd /etc
 > * ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
 > * ```pwd(Print Working Directory)``` 查看当前目录
-> ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
-> ```touch``` 创建文件，如 touch index.html
-> ```wc (Word Count) ``` 字数信息统计，如 wc index.html
-> ```wc -l filename ``` 报告行数
-> ```wc -c filename ``` 报告字节数
-> ```wc -m filename ``` 报告字符数
-> ```wc -w filename ``` 报告单词数
-> ```cat ``` 查看文件全部内容，如 cat index.html
-> ```more less ``` 查看文件，如more /etc/passwd、less /etc/passwd
-> ```rm (remove) ``` 删除文件，如 rm index.html、rm -rf  blog
-> ```rmdir (Remove Directory) ``` 删除文件夹，只能删除空文件夹，不常用
-> ```mv (move)  ``` 移动文件或重命名，如 mv index.html ./demo/index.html
-> ```cp (copy)  ``` 复制文件，cp index.html ./demo/index.html
-> ```head ``` 查看文件前几行，如 head -5 index.html
-> ```tail  ``` 查看文件后几行 –n –f，如 tail index.html、tail -5 index.html 
-> ```tab  ``` 自动补全，连按两次会将所有匹配内容显示出来
-> ```history  ``` 查看操作历史
-> ```ssh  ``` 远程登录，如ssh root@gitlab.study.com
-> ```> 和 >> ``` 重定向，如echo hello world! > README.md，>覆盖 >>追加,把原来输入的内容，自己指定到别的地方。把原本输出到屏幕上的内容，写入到指定的文件当中。如果文件不存在，会自动帮你创建文件。
-> ```wget  ``` 下载，如wget https://nodejs.org/dist/v4.4.0/node-v4.4.0.tar.gz
-> ```tar   ``` 解压缩，如tar zxvf node-v4.4.0
-> ```curl   ``` 网络请求，如curl http://www.baidu.com
-> ```who am i  ``` 查看当前用户
-> ```|   ``` 管道符,把上一次的结果(输出)当做下一次的参数(输入)。
-> ```grep ``` 匹配内容，一般结合管道符使用
+> * ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
+> * ```touch``` 创建文件，如 touch index.html
+> * ```wc (Word Count) ``` 字数信息统计，如 wc index.html
+> * ```wc -l filename ``` 报告行数
+> * ```wc -c filename ``` 报告字节数
+> * ```wc -m filename ``` 报告字符数
+> * ```wc -w filename ``` 报告单词数
+> * ```cat ``` 查看文件全部内容，如 cat index.html
+> * ```more less ``` 查看文件，如more /etc/passwd、less /etc/passwd
+> * ```rm (remove) ``` 删除文件，如 rm index.html、rm -rf  blog
+> * ```rmdir (Remove Directory) ``` 删除文件夹，只能删除空文件夹，不常用
+> * ```mv (move)  ``` 移动文件或重命名，如 mv index.html ./demo/index.html
+> * ```cp (copy)  ``` 复制文件，cp index.html ./demo/index.html
+> * ```head ``` 查看文件前几行，如 head -5 index.html
+> * ```tail  ``` 查看文件后几行 –n –f，如 tail index.html、tail -5 index.html 
+> * ```tab  ``` 自动补全，连按两次会将所有匹配内容显示出来
+> * ```history  ``` 查看操作历史
+> * ```ssh  ``` 远程登录，如ssh root@gitlab.study.com
+> * ```> 和 >> ``` 重定向，如echo hello world! > README.md，>覆盖 >>追加,把原来输入的内容，自己指定到别的地方。把原本输出到屏幕上的内容，写入到指定的文件当中。如果文件不存在，会自动帮你创建文件。
+> * ```wget  ``` 下载，如wget https://nodejs.org/dist/v4.4.0/node-v4.4.0.tar.gz
+> * ```tar   ``` 解压缩，如tar zxvf node-v4.4.0
+> * ```curl   ``` 网络请求，如curl http://www.baidu.com
+> * ```who am i  ``` 查看当前用户
+> * ```|   ``` 管道符,把上一次的结果(输出)当做下一次的参数(输入)。
+> * ```grep ``` 匹配内容，一般结合管道符使用
 
 ### Vi编辑器
 > Vi编辑器是Linux和Unix上最基本的文本编辑器，工作在字符模式下。由于不需要图形界面，Vi是效率很高的文本编辑器。尽管在Linux上也有很多图形界面的编辑器可用，但vi在系统和服务器管理中的功能是那些图形编辑器所无法比拟的。类似于Window下的记事本.
@@ -82,25 +82,24 @@
 > 我们可以通过Esc键回到命令模式.
 > 每一种编辑下面有对应的命令.
 > 1. *输入模式命令*
-	 - 直接输入i或者a进入输入模式,可以进行内容的编辑
-	 - 想要退出输入模式,则按下键盘的Esc键
+	 * - 直接输入i或者a进入输入模式,可以进行内容的编辑
+	 * - 想要退出输入模式,则按下键盘的Esc键
 > 2. *末行模式命令*
-	 - 进行末位模式: shift + :
-	 - w: 保存当前文件
-	 - w filePath/fileName: 另存为
-	 - wq: 保存并退出
-	 - e!: 撤销更改,返回上一次保存状态
-	 - q!: 不保存,强制退出.
-	 - set nu: 设置行号
+	 * - 进行末位模式: shift + :
+	 * - w: 保存当前文件
+	 * - w filePath/fileName: 另存为
+	 * - wq: 保存并退出
+	 * - e!: 撤销更改,返回上一次保存状态
+	 * - q!: 不保存,强制退出.
+	 * - set nu: 设置行号
 > 3. *命令模式*
-	 - ZZ: (大写)保存并直接退出
-	 - yy: 复制当前行
-	 - u: 撤销操作,可以撤销多次
-	 - dd: 删除当前行
-	 - p: 粘贴内容
-	 - ctrl + f: 向前翻页.
-	 - ctrl + b: 向后翻页
-	
+	 * - ZZ: (大写)保存并直接退出
+	 * - yy: 复制当前行
+	 * - u: 撤销操作,可以撤销多次
+	 * - dd: 删除当前行
+	 * - p: 粘贴内容
+	 * - ctrl + f: 向前翻页.
+	 * - ctrl + b: 向后翻页
 	 
 ### 版本控制
 > 版本控制（Version Control Systems）是一种软体工程技巧，在开发的过程中，确保由不同人所编辑的同一档案都得到更新。版本控制通过文档控制(documentation control)记录程序各个模块的改动,并为每次改动编上序号.这种方法时工程图(engineering drawings) 维护 (maintenance)的标准做法.
@@ -142,45 +141,45 @@
 >   git config --global user.name "自已的名字"
 >   git config --global user.email "自已的邮箱地址"
 >  ```
->  初始化仓库: git init 
->  查看当前状态: git status
->  提交本地文件到缓存区: git add -A(提交所有的)
->  将缓存区的东西提交到本地仓库: git commit -m"提交信息"
->  查看所有的提交日志: git log
->  回退到某一个版本: git reset --hard sha值
->  回退到修改状态: git reset --mixed(默认可以不写) sha值
+>  * 初始化仓库: git init 
+>  * 查看当前状态: git status
+>  * 提交本地文件到缓存区: git add -A(提交所有的)
+>  * 将缓存区的东西提交到本地仓库: git commit -m"提交信息"
+>  * 查看所有的提交日志: git log
+>  * 回退到某一个版本: git reset --hard sha值
+>  * 回退到修改状态: git reset --mixed(默认可以不写) sha值
 >  回退到暂存区状态: git reset --soft sha值
 >  将本地仓库的内容提交到远程服务器: git push
 >  从远程服务器更新: git pull
 >  查看所有的sha值: git reflog
 
 ### Git的基本使用示例
-> 第一步: 使用命令行在桌面上创建一个文件夹code、
+> * 第一步: 使用命令行在桌面上创建一个文件夹code、
 > ![2345截图20180109162707.png](http://upload-images.jianshu.io/upload_images/122816-e42d2d462b44f6e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109162728.png](http://upload-images.jianshu.io/upload_images/122816-4aea8badeb6fe43c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第二步： 切换到code文件夹下，创建index.txt文件,并初始化Git仓库
+> * 第二步： 切换到code文件夹下，创建index.txt文件,并初始化Git仓库
 > ![2345截图20180109163039.png](http://upload-images.jianshu.io/upload_images/122816-190481c8d670f498.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109163229.png](http://upload-images.jianshu.io/upload_images/122816-78839d2434a90aa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > win7下开启显示隐藏的文件夹
 > ![2345截图20180109163511.png](http://upload-images.jianshu.io/upload_images/122816-4b9d08f76c1266bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109163551.png](http://upload-images.jianshu.io/upload_images/122816-c7947598c044ce2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第三步: 查看文件状态
+> * 第三步: 查看文件状态
 > ![2345截图20180109164112.png](http://upload-images.jianshu.io/upload_images/122816-18a8df3288a23b89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第四步: 添加文件到暂存区
+> * 第四步: 添加文件到暂存区
 > ![2345截图20180109164354.png](http://upload-images.jianshu.io/upload_images/122816-17239ba30b5d38cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第五步: 提交文件到本地仓库
+> * 第五步: 提交文件到本地仓库
 > ![2345截图20180109164750.png](http://upload-images.jianshu.io/upload_images/122816-2465e181969c1647.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第六步: 配置用户名和邮箱
+> * 第六步: 配置用户名和邮箱
 > ![2345截图20180109165138.png](http://upload-images.jianshu.io/upload_images/122816-afea0eb7597b4ac9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109165246.png](http://upload-images.jianshu.io/upload_images/122816-74227796fb803c3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109165417.png](http://upload-images.jianshu.io/upload_images/122816-62ef452b86eff327.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109165639.png](http://upload-images.jianshu.io/upload_images/122816-4cb0bea4a311e0b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109165708.png](http://upload-images.jianshu.io/upload_images/122816-409ff32bf504bf82.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第七步: 查看提交的历史
+> * 第七步: 查看提交的历史
 > ![2345截图20180109170208.png](http://upload-images.jianshu.io/upload_images/122816-8665856ff011eff0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第八步: 对文件进行修改,再次查看文件状态,发现为modified状态,此时需要再次把它提交到暂存区并提交本地仓库
+> * 第八步: 对文件进行修改,再次查看文件状态,发现为modified状态,此时需要再次把它提交到暂存区并提交本地仓库
 > ![2345截图20180109171039.png](http://upload-images.jianshu.io/upload_images/122816-351c6cdcee1f51ff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第九步： 回退到第一个版本
+> * 第九步： 回退到第一个版本
 > ![2345截图20180109171525.png](http://upload-images.jianshu.io/upload_images/122816-8ab39d02ae380de8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 有关分支操作的命令:
@@ -191,38 +190,38 @@
 > 删除分支: git branch -d fixBranch
 
 ### 分支使用示例
-> 查看历史版本
+> * 查看历史版本
 > ![2345截图20180109172136.png](http://upload-images.jianshu.io/upload_images/122816-0891040e719f58f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第一步：创建分支，查看分支
+> * 第一步：创建分支，查看分支
 > ![2345截图20180109172631.png](http://upload-images.jianshu.io/upload_images/122816-f41e7d63fa1901a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第二步： 切换分支
+> * 第二步： 切换分支
 > ![2345截图20180109172845.png](http://upload-images.jianshu.io/upload_images/122816-088ed5a6385ab708.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第三步：在新分支下，添加一些代码
+> * 第三步：在新分支下，添加一些代码
 > ![2345截图20180109173338.png](http://upload-images.jianshu.io/upload_images/122816-a4524cd44254aa60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109173433.png](http://upload-images.jianshu.io/upload_images/122816-b92b9778cc4cee86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第四步： 再次切换到主分支，查看日志，发现并没有在developer分支中添加的日志，查看文件也没有在developer分支添加的内容
+> * 第四步： 再次切换到主分支，查看日志，发现并没有在developer分支中添加的日志，查看文件也没有在developer分支添加的内容
 > ![2345截图20180109173855.png](http://upload-images.jianshu.io/upload_images/122816-ae16990e462501a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109173935.png](http://upload-images.jianshu.io/upload_images/122816-af6afba986d9b16e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第五步： 合并分支，合并分支后，在master分支上，可以看到所有提交的历史日志和在developer分支所添加的文件
+> * 第五步： 合并分支，合并分支后，在master分支上，可以看到所有提交的历史日志和在developer分支所添加的文件
 > ![2345截图20180109174532.png](http://upload-images.jianshu.io/upload_images/122816-6bcfa474f7c8fd47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109174634.png](http://upload-images.jianshu.io/upload_images/122816-7b5497fd7a7a9e44.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第六步： 删除分支
+> * 第六步： 删除分支
 > ![2345截图20180109174831.png](http://upload-images.jianshu.io/upload_images/122816-fc67dc98566af07c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Git多人共享代码示例
-> 在实际开发中，多个开发者之间经常需要互相拷贝代码，以下是相关示例
-> 第一步： 在code文件夹中创建两个文件夹，分别为user1和user2，代表两个用户
+> * 在实际开发中，多个开发者之间经常需要互相拷贝代码，以下是相关示例
+> * 第一步： 在code文件夹中创建两个文件夹，分别为user1和user2，代表两个用户
 > ![2345截图20180109184702.png](http://upload-images.jianshu.io/upload_images/122816-1d072f06721c25a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第二步： user1用户创建一个项目，并且纳入到Git的版本控制
+> * 第二步： user1用户创建一个项目，并且纳入到Git的版本控制
 > ![2345截图20180109185150.png](http://upload-images.jianshu.io/upload_images/122816-414ec9f8928cfeb6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109185211.png](http://upload-images.jianshu.io/upload_images/122816-928a4a12ad70f635.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第三步： user2用户想要拷贝user1的代码，做如下操作
+> * 第三步： user2用户想要拷贝user1的代码，做如下操作
 > ![2345截图20180109185556.png](http://upload-images.jianshu.io/upload_images/122816-e26dbcf919f1e3e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109185920.png](http://upload-images.jianshu.io/upload_images/122816-91a2faeb86d8fffe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第四步： user2用户修改代码，并且提交到本地仓库
+> * 第四步： user2用户修改代码，并且提交到本地仓库
 > ![2345截图20180109190204.png](http://upload-images.jianshu.io/upload_images/122816-70b2c738e05375b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109190420.png](http://upload-images.jianshu.io/upload_images/122816-95b4e4eef35e340c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第五步:  user1用户想要拷贝user2用户的代码的话，此时需要执行更新命令
+> * 第五步:  user1用户想要拷贝user2用户的代码的话，此时需要执行更新命令
 > ![2345截图20180109190828.png](http://upload-images.jianshu.io/upload_images/122816-9a51296feaab8b2b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109190940.png](http://upload-images.jianshu.io/upload_images/122816-bf15aed93d48e1a1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -231,23 +230,23 @@
 > 创建一个本地共享仓库: git clone --bare 仓库地址或者名称
 
 ### Git共享仓库示例
-> 共享仓库,虽然是一个裸仓库,但是它克隆下来的内容,是一个完整的仓库,里面是有工作区域的,但是看不到,它把工作区隐藏了,不让你去修改里面的内容,它是用来共享的,不能修改任何源代码;
-> 第一步： 在桌面创建一个Progect文件夹，文件夹中存放三个文件夹为shareProgect，user1和user2，分别代表本地共享库，用户1和用户2
+> * 共享仓库,虽然是一个裸仓库,但是它克隆下来的内容,是一个完整的仓库,里面是有工作区域的,但是看不到,它把工作区隐藏了,不让你去修改里面的内容,它是用来共享的,不能修改任何源代码;
+> * 第一步： 在桌面创建一个Progect文件夹，文件夹中存放三个文件夹为shareProgect，user1和user2，分别代表本地共享库，用户1和用户2
 > ![2345截图20180109191617.png](http://upload-images.jianshu.io/upload_images/122816-31977c1d420f971a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第二步： 在user1用户中创建一个project文件夹，代表一个项目并初始化index.txt文件纳入到git版本控制
+> * 第二步： 在user1用户中创建一个project文件夹，代表一个项目并初始化index.txt文件纳入到git版本控制
 > ![2345截图20180109191916.png](http://upload-images.jianshu.io/upload_images/122816-36b0b9fb0d55cfa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109192010.png](http://upload-images.jianshu.io/upload_images/122816-1bfaddfe3504fea7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第三步： 在shareProgect文件夹创建共享仓库
+> * 第三步： 在shareProgect文件夹创建共享仓库
 > ![2345截图20180109192341.png](http://upload-images.jianshu.io/upload_images/122816-fd7d1c2e77a32a64.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109192528.png](http://upload-images.jianshu.io/upload_images/122816-1fc61ff5753a56e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109192639.png](http://upload-images.jianshu.io/upload_images/122816-661dd2780d2464cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第四步： user2拉取共享仓库的代码，并作出修改，提交到共享仓库
+> * 第四步： user2拉取共享仓库的代码，并作出修改，提交到共享仓库
 > ![2345截图20180109193550.png](http://upload-images.jianshu.io/upload_images/122816-3cf915267b879b96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109193657.png](http://upload-images.jianshu.io/upload_images/122816-c118d31632110137.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109193906.png](http://upload-images.jianshu.io/upload_images/122816-0ed9c6253304a674.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109194158.png](http://upload-images.jianshu.io/upload_images/122816-b0d2b83c6b51fe6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109194350.png](http://upload-images.jianshu.io/upload_images/122816-ec5a0fff50154c21.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-> 第五步： user1更新共享仓库中的最新代码
+> * 第五步： user1更新共享仓库中的最新代码
 > ![2345截图20180109194613.png](http://upload-images.jianshu.io/upload_images/122816-af736dad4a0fea5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 > ![2345截图20180109194649.png](http://upload-images.jianshu.io/upload_images/122816-9c5c99d86be48602.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
