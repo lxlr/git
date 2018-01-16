@@ -82,24 +82,24 @@
 > 	* 我们可以通过Esc键回到命令模式.
 > 	* 每一种编辑下面有对应的命令.
 > * 输入模式命令
-	* - 直接输入i或者a进入输入模式,可以进行内容的编辑
-	* - 想要退出输入模式,则按下键盘的Esc键
+	* 直接输入i或者a进入输入模式,可以进行内容的编辑
+	* 想要退出输入模式,则按下键盘的Esc键
 > * 末行模式命令
-	* - 进行末位模式: shift + :
-	* - w: 保存当前文件
-	* - w filePath/fileName: 另存为
-	* - wq: 保存并退出
-	* - e!: 撤销更改,返回上一次保存状态
-	* - q!: 不保存,强制退出.
-	* - set nu: 设置行号
+	* 进行末位模式: `shift + :`
+	* ` w`: 保存当前文件
+	* ` w` filePath/fileName: 另存为
+	* ` wq`: 保存并退出
+	* ` e!`: 撤销更改,返回上一次保存状态
+	* ` q!`: 不保存,强制退出.
+	* `set nu`: 设置行号
 > * 命令模式
-	* - ZZ: (大写)保存并直接退出
-	* - yy: 复制当前行
-	* - u: 撤销操作,可以撤销多次
-	* - dd: 删除当前行
-	* - p: 粘贴内容
-	* - ctrl + f: 向前翻页.
-	* - ctrl + b: 向后翻页
+	* `ZZ`: (大写)保存并直接退出
+	* `yy`: 复制当前行
+	* `u`: 撤销操作,可以撤销多次
+	* `dd`: 删除当前行
+	* `p`: 粘贴内容
+	* `ctrl + f`: 向前翻页.
+	* `ctrl + b`: 向后翻页
 	 
 ### 版本控制
 > 版本控制（Version Control Systems）是一种软体工程技巧，在开发的过程中，确保由不同人所编辑的同一档案都得到更新。版本控制通过文档控制(documentation control)记录程序各个模块的改动,并为每次改动编上序号.这种方法时工程图(engineering drawings) 维护 (maintenance)的标准做法.
@@ -183,11 +183,11 @@
 > ![2345截图20180109171525.png](http://upload-images.jianshu.io/upload_images/122816-8ab39d02ae380de8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 有关分支操作的命令:
-> 开启分支: git branch fixBranch(分支名称)
-> 查看当前分支 有*的代表当前正在工作的分支: git branch
-> 切换到fixBranch的分支上: git checkout fixBranch
-> 分支合并,将fixBranch上的内容合并到master上: git merge fixBranch
-> 删除分支: git branch -d fixBranch
+> * 开启分支: git branch fixBranch(分支名称)
+> * 查看当前分支 有*的代表当前正在工作的分支: git branch
+> * 切换到fixBranch的分支上: git checkout fixBranch
+> * 分支合并,将fixBranch上的内容合并到master上: git merge fixBranch
+> * 删除分支: git branch -d fixBranch
 
 ### 分支使用示例
 > * 查看历史版本
