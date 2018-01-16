@@ -42,10 +42,10 @@
 ### Bash命令
 > 常见命令格式: 命令[-options][参数]
 >> ```cd (Change Directory)``` 切换目录，如 cd /etc
-> ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
-> ```pwd(Print Working Directory)``` 查看当前目录
-> ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
-> ```touch``` 创建文件，如 touch index.html
+>> ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
+>> ```pwd(Print Working Directory)``` 查看当前目录
+>> ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
+>> ```touch``` 创建文件，如 touch index.html
 > ```wc (Word Count) ``` 字数信息统计，如 wc index.html
 > ```wc -l filename ``` 报告行数
 > ```wc -c filename ``` 报告字节数
@@ -118,13 +118,10 @@
 
 ### Git的工作原理
 > 为了更好的学习Git,我们必须了解Git管理我们文件的3中状态. 分别是:
-> 1. 已提交(committed)
-> 2. 已修改(modified)
-> 3. 已暂存(staged)
+> 1. 已提交(committed) 没有任何提示
+> 2. 已修改(modified) (没有纳入到版本控制) 红色
+> 3. 已暂存(staged) 绿色
 >    由此引入Git项目的三个工作区域概念
-> 4. 已提交(committed) 没有任何提示
-> 5. 已修改(modified) (没有纳入到版本控制) 红色
-> 6. 已暂存(staged) 绿色
 >    > Git仓库:
 >    > 是Git用来保存项目的元数据和对象数据库的地方.这是Git中最重要的部分,从其他计算机克隆仓库时,拷贝的就是这里的数据.
 >    > 工作目录:
