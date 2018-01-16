@@ -28,9 +28,9 @@
 >    ![2345截图20180109154946.png](http://upload-images.jianshu.io/upload_images/122816-7bd698d0b37655a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Git的简单配置
-* 打开Git的命令窗口
-* 在要使用的文件夹通过鼠标右键，选择Git Bash Here来打开命令窗口
-* 配置命令窗口的显示文字大小
+> * 打开Git的命令窗口
+> * 在要使用的文件夹通过鼠标右键，选择Git Bash Here来打开命令窗口
+> * 配置命令窗口的显示文字大小
 
 ### 认识Shell
 > Shell是用户和Linux操作系统之间的接口.Linux中有多种shell,其中缺省使用的是Bash.Shell俗称壳,用来区别于Kernel(核), 是指'提供使用者使用界面'的软件(命令解析器).它类似于DOS下的command和后来的cmd.exe.它接收用户命令,然后调用相应应用程序.
