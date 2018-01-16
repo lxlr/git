@@ -41,10 +41,8 @@
 
 ### Bash命令
 > 常见命令格式: 命令[-options][参数]
-> ```cd (Change Directory)``` 切换目录，如 cd /etc
-
+>> ```cd (Change Directory)``` 切换目录，如 cd /etc
 > ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
-
 > ```pwd(Print Working Directory)``` 查看当前目录
 > ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
 > ```touch``` 创建文件，如 touch index.html
@@ -83,8 +81,6 @@
 > 在输入模式下是不能够直接切换到末行模式,必须得先回到命令模式.
 > 我们可以通过Esc键回到命令模式.
 > 每一种编辑下面有对应的命令.
-
-```
 > 1. *输入模式命令*
 	 - 直接输入i或者a进入输入模式,可以进行内容的编辑
 	 - 想要退出输入模式,则按下键盘的Esc键
@@ -104,7 +100,7 @@
 	 - p: 粘贴内容
 	 - ctrl + f: 向前翻页.
 	 - ctrl + b: 向后翻页
-	 ```
+	
 	 
 ### 版本控制
 > 版本控制（Version Control Systems）是一种软体工程技巧，在开发的过程中，确保由不同人所编辑的同一档案都得到更新。版本控制通过文档控制(documentation control)记录程序各个模块的改动,并为每次改动编上序号.这种方法时工程图(engineering drawings) 维护 (maintenance)的标准做法.
