@@ -40,8 +40,8 @@
 > ![image](http://upload-images.jianshu.io/upload_images/122816-06fffbeb21866cfc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### Bash命令
-> 常见命令格式: 命令[-options][参数]
-> ```cd (Change Directory)``` 切换目录，如 cd /etc
+> *常见命令格式: 命令[-options][参数]
+> *```cd (Change Directory)``` 切换目录，如 cd /etc
 > ```ls (List)``` 查看当前目录下内容，如 ls -al, ls -l
 > ```pwd(Print Working Directory)``` 查看当前目录
 > ```mkdir (Make Directory) ``` 创建目录，如 mkdir blog
